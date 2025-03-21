@@ -1,0 +1,69 @@
+/*
+ * Desafio do Módulo: React: desenvolvendo com JavaScript | Programa Oracle ONE
+ * Dev e Aluno: Lucas Elias Dickmann
+ */
+
+/* Styles Footer component */
+
+.footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  padding: 5rem 0.5rem 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .container-social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .icon {
+  font-size: 1.8rem;
+  color: #443c70;
+}
+
+.footer p {
+  color: #f1ba63;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+}
+
+.footer .container-subtitle {
+  color: #443c70;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 4rem 0 1rem 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 1.875rem;
+    padding: 0.625rem;
+  }
+
+  .footer .container-social-media {
+    justify-content: center;
+    margin-top: 1.25rem;
+  }
+
+  .footer .container-subtitle {
+    margin-top: 1rem;
+  }
+}

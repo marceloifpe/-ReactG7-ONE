@@ -1,0 +1,15 @@
+/* Styles Forms */
+
+.forms {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.forms form {
+  max-width: 80%;
+  background-color: #f6f6f6;
+  border-radius: 1.25rem;
+  padding: 2.25rem 4rem;
+  box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.08);
+}
