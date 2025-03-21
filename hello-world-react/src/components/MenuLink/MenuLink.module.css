@@ -1,0 +1,26 @@
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  border-radius: 3px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.4rem;
+}
+
+.linkHighlighted {
+  text-decoration: underline #e1a6a6;
+}
+
+.sidebarLink {
+  color: white;
+  font-family: "Silkscreen", serif;
+  font-weight: 500;
+  font-size: 3rem;
+  width: 90%;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.sidebarLinkHighlighted {
+  opacity: 1;
+  color: white;
+}

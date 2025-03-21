@@ -1,0 +1,85 @@
+/* Navbar */
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(41, 33, 33, 0.448);
+  transition: top 0.3s;
+}
+
+/* Ajustes para o menu de navegação */
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Ícone para abrir a sidebar em telas menores */
+.toggleIcon {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto; /* Alinha o ícone no canto direito */
+  margin-top: 10px;
+  display: none; /* Oculta o ícone em telas grandes */
+}
+
+/* Media query para telas até 600px) */
+@media (max-width: 600px) {
+  .navList {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(41, 33, 33, 0.9);
+    padding-top: 50px;
+    transition: opacity 0.3s ease;
+  }
+
+  .navList li {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .navList li a {
+    padding: 15px;
+  }
+
+  /* Exibe o menu quando a sidebar está aberta */
+  .open .navList {
+    display: flex;
+  }
+
+  /* Ajusta o estilo do botão de abrir o menu */
+  .toggleIcon {
+    display: block;
+  }
+}
+
+/* Media query para telas grandes (acima de 600px) */
+@media (min-width: 600px) {
+  .navigation {
+    display: flex;
+  }
+
+  .toggleIcon {
+    display: none;
+  }
+
+  .navList {
+    display: flex;
+    margin-top: 0;
+  }
+
+  /* Espaçamento entre os links do menu */
+  .navList li {
+    margin: 0 10px;
+  }
+}

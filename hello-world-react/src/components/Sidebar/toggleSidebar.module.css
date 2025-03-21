@@ -1,0 +1,42 @@
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  background-color: #000;
+  transition: width 0.3s, opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 1rem;
+}
+
+/* Links na sidebar */
+.sidebarLink {
+  font-family: "Silkscreen", serif;
+  font-weight: 500;
+  font-size: 3rem;
+  width: 90%;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+/* Links quando a sidebar está aberta */
+.sidebar.open .sidebarLink {
+  opacity: 1;
+  color: white;
+}
+
+/* Container Header da sidebar */
+.sidebarHeader {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Botão de fechar a sidebar */
+.closeIcon {
+  align-self: flex-end;
+  margin-right: 3vh;
+  margin-top: 3vh;
+  cursor: pointer;
+}
